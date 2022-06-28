@@ -1,0 +1,132 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+
+.contato {
+    background: var(--branco);
+    color: var(--azul-degrade);    
+    padding: 1em;    
+}
+
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     background-clip: text;    
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {    
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__pesquisa {    
+    border: 2px solid var(--azul);
+    color: var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;    
+}
+
+.contato__pesquisa::placeholder {
+    font-family: var(--fonte-principal);    
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 3em;
+    color: var(--azul);
+    background: url("../images/email.svg") no-repeat;
+       
+}
+
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista-rodape {
+        display: block;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__descricao {
+        margin-left: 1em;
+        width: 20%;
+    }
+
+    .contato__pesquisa {
+        width: 30%;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;   
+        margin: 1em 0;     
+    }
+
+    .lista-rodape__link {
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+
+    .lista-rodape__titulo {
+        font-size: 14px;
+        color: var(--cinza-claro);
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+    }
+
+    .lista-rodape__link:hover {
+        color: var(--laranja);
+        }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 3em 20vw;
+    }
+
+    .lista-rodape {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+
+    .rodape {
+        padding: 3em 0;
+    }
+    
+    .lista-rodape__link:hover {
+        color: orange;
+        }
+}
+
+
+
